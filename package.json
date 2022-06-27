@@ -1,15 +1,17 @@
 {
-    "name": "joi",
-    "description": "Object schema validation",
-    "version": "17.6.0",
-    "repository": "git://github.com/sideway/joi",
-    "main": "lib/index.js",
+    "name": "@alita/joi",
+    "description": "一个 joi 的阉割版本，少了 string 的 email 校验，因为在 ie 上没有 TextEncoder",
+    "version": "0.0.3",
+    "repository": "git://github.com/xiaohuoni/joi",
+    "main": "dist/joi-browser.min.js",
     "types": "lib/index.d.ts",
-    "browser": "dist/joi-browser.min.js",
     "files": [
         "lib/**/*",
         "dist/*"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "keywords": [
         "schema",
         "validation"
@@ -29,7 +31,7 @@
         "typescript": "4.3.x"
     },
     "scripts": {
-        "prepublishOnly": "cd browser && npm install && npm run build",
+        "prepublishOnly": "cd browser && npm run build",
         "test": "lab -t 100 -a @hapi/code -L -Y",
         "test-cov-html": "lab -r html -o coverage.html -a @hapi/code"
     },
