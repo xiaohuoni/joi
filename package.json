@@ -1,7 +1,7 @@
 {
     "name": "@alita/joi",
     "description": "一个 joi 的阉割版本，少了 string 的 email 校验，因为在 ie 上没有 TextEncoder",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "repository": "git://github.com/xiaohuoni/joi",
     "main": "dist/joi-browser.min.js",
     "types": "lib/index.d.ts",

@@ -11,6 +11,7 @@ module.exports = {
         filename: 'joi-browser.min.js',
         path: Path.join(__dirname, '../dist'),
         library: 'joi',
+        globalObject:'this',
         libraryTarget: 'umd'
     },
     target: ['web', 'es5'],
